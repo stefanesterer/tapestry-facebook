@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.derstefon</groupId>
+	<artifactId>tapestry-facebook</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Tapestry Facebook Moodule</name>
+	<description>Tapestry Facebook Moodule</description>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>net.smartam.leeloo</groupId>
+			<artifactId>oauth2-client</artifactId>
+			<version>0.1</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>net.smartam.leeloo</groupId>
+			<artifactId>oauth2-common</artifactId>
+			<version>0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.restfb</groupId>
+			<artifactId>restfb</artifactId>
+			<version>1.6.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tapestry</groupId>
+			<artifactId>tapestry-core</artifactId>
+			<version>${tapestry-release-version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>tapestryFB</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+					<optimize>true</optimize>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Tapestry-Module-Classes>net.derstefon.tapestry.facebook.services.FacebookModule</Tapestry-Module-Classes>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<properties>
+		<tapestry-release-version>5.3.3</tapestry-release-version>
+	</properties>
+
+</project>

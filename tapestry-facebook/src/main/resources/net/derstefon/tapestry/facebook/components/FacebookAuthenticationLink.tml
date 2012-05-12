@@ -1,0 +1,12 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+		xmlns:p="tapestry:parameter">
+
+	<t:if test="loggedIn">
+		Logged in!
+		
+		<p:else>
+			<a href="${facebookAuthentificationLink}">Link</a>
+		</p:else>
+	</t:if>
+
+</html>

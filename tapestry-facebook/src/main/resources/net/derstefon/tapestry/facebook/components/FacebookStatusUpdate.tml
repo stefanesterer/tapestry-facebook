@@ -1,0 +1,13 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+	xmlns:p="tapestry:parameter">
+
+
+	<p>
+	<h2>Facebook Status Update</h2>
+	<form t:id="form">
+		<input t:id="statusMessage" />
+		<submit t:id="submit" />
+	</form>
+	</p>
+	
+</html>

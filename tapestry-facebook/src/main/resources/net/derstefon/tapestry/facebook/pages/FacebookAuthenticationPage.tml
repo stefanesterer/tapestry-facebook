@@ -1,0 +1,16 @@
+<html t:type="layout" title="tapestryTest Index" t:sidebarTitle="Framework Version"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter"
+	 xmlns:fb="tapestry-library:tapestryfb">
+
+
+<div t:id="faceBookAuthentication"/>
+
+<a t:id="logout">Logout</a>
+
+<div t:id="userInformation"/>
+
+<div t:id="statusUpdate"/>
+
+<div t:id="linkPublish" />
+
+</html>
